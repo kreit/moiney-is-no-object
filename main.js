@@ -12,15 +12,17 @@ const isAdmin = function(userObj){
 
 
 const getHardestHomework = function(homeworkArr){
-    // how do we access all of the values in an array? 
-    for(let i = 0; 1 < homeworkArr.length; i++){
-        // access avg score
-        console.log(homeworkArr[i])
-        // check to see if avg score is less than the other score
-        
-        // if ism, save that hw name
+    if(homeworkArr.length === 0){
+        return ""
     }
-}
+    let lowestScore = homeworkArr[0]
+    for(let i = 0; i < homeworkArr.length; i++){
+        if(homeworkArr[i].averageScore < lowestScore.averageScore){
+            lowestScore = homeworkArr[i]
+        }
+    }
+    return lowestScore.name
+}   
 
 
 // ┌─────────────────────────────────────┐
