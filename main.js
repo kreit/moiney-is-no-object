@@ -2,8 +2,25 @@
 // │ Your code here! │	
 // └─────────────────┘
 
+const isAdmin = function(userObj){
+    if(userObj.userRole === "ADMIN"){
+        return true
+    }else{
+        return false
+    }
+}
 
 
+const getHardestHomework = function(homeworkArr){
+    // how do we access all of the values in an array? 
+    for(let i = 0; 1 < homeworkArr.length; i++){
+        // access avg score
+        console.log(homeworkArr[i])
+        // check to see if avg score is less than the other score
+        
+        // if ism, save that hw name
+    }
+}
 
 
 // ┌─────────────────────────────────────┐
